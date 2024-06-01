@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+.nav-select-slide {
+  transition: left 0.5s linear, width 0.5s linear;
+}
+
+.nav-select-text-color {
+  color: black;
+  transition: color 1s linear 0.5s;
+}
+
