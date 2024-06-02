@@ -41,3 +41,27 @@ body {
   transition: color 1s linear 0.5s;
 }
 
+.me-image {
+  position: relative;
+  width: 520px;
+  height: 520px;
+}
+
+.me-image::before {
+  content: "";
+  border-radius: 9999px;
+  background: conic-gradient(red, orange, yellow, green, blue);
+  width: 104%;
+  height: 104%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  z-index: -1;
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
